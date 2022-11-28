@@ -6,7 +6,6 @@
 //*исключение,которое пользователь может увидеть-RuntimeException,т.е.ваше. {
 
 public class ArrayMas2 {
-
     public static void main(String[] args) {
         int[] arr1 = { 1, 2, 3, 2, 5, 6, 8, 9, 2, 4 };
         int[] arr2 = { 1, 2, 10, 3, 4, 0, 8, 8, 2, 4 };
@@ -31,15 +30,10 @@ public class ArrayMas2 {
             } else {
                 System.out.println("Длины массивов не равно, а значит это что- то значит");
             }
-            
         } catch (RuntimeException e) {
-            //System.out.println("была перехвачена ошибка  " + e.getClass().getSimpleName());
-            System.out.println("была перехвачена ошибка RuntimeException " );
+            // System.out.println("была перехвачена ошибка " +
+            // e.getClass().getSimpleName());
+            System.out.println("была перехвачена ошибка RuntimeException ");
         }
-
-
-      
-
     }
-
 }
