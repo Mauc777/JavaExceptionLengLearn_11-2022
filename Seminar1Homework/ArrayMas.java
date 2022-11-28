@@ -15,7 +15,6 @@ public class ArrayMas {
     }
 
     public static void massivCreateNewC(int[] a, int[] b) {
-        // int[] c = {};
         if (a.length == b.length) {
             // объявление массива arr3 по размерности одного из массивов
             int[] arr3 = new int[a.length];
