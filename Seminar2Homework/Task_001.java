@@ -7,19 +7,22 @@ import java.util.Scanner;
 
 public class Task_001 {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Введите дробное число через ' , ' : ");
-        if (scan.hasNextFloat()) {
-            float i = scan.nextFloat();
-            System.out.println(i);
-        } else {
-            System.out.println("Вы ввели не дробное число");
+        try {
+            Scanner scan = new Scanner(System.in);
+            System.out.println("Введите дробное число через ' , ' : ");
+            if (scan.hasNextFloat()) {
+                float i = scan.nextInt();
+                System.out.printf("введено: %.f", i);
+            } else {
+                // System.out.println("Вы ввели не дробное число");
+                //scan.close();
+            }
+            scan.close();
+
+        } catch (Exception e) {
+            // TODO: handle exception
         }
-     
- 
+
     }
-    
 
-
-    
 }
